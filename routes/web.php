@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post("eaadhaar", [aadhar\upload\Eaadhaar::class, "index"]);
